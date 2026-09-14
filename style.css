@@ -60,7 +60,7 @@ header {
   display: inline-block;
   color: var(--navy);
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.2;
   text-decoration: none;
@@ -164,11 +164,13 @@ main {
 
 .section-label {
   color: var(--gold);
-  font-size: 1rem;
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h2 {
