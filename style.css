@@ -229,3 +229,23 @@ footer {
     padding-bottom: 55px;
   }
 }
+/* Banner a todo lo ancho de la pantalla */
+.hero {
+  width: 100vw !important;
+  max-width: none !important;
+  height: 50vh !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.hero img {
+  display: block;
+  width: 100vw !important;
+  max-width: none !important;
+  height: 50vh !important;
+  object-fit: cover;
+  object-position: center center;
+}
