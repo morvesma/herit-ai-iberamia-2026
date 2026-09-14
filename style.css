@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap');
+/* ==============================
+   GENERAL
+============================== */
 
 :root {
-  --navy: #073b5c;
-  --teal: #1b9eaa;
-  --gold: #b17c35;
-  --cream: #f7f3eb;
-  --ink: #172b3a;
-  --line: #d9d3c8;
+  --navy: #062b49;
+  --gold: #b47b2c;
+  --cream: #f4f1ea;
+  --light-blue: #eef4f7;
+  --text: #092d4d;
+  --white: #ffffff;
 }
 
 * {
@@ -19,64 +21,65 @@ html {
 
 body {
   margin: 0;
-  color: var(--ink);
-  font-family: Inter, Arial, sans-serif;
-  line-height: 1.65;
-  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 17px;
 }
 
-/* HEADER */
-.site-header {
+/* ==============================
+   HEADER
+============================== */
+
+header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
+  background: var(--white);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1rem 5%;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  padding: 18px 4vw;
-  background: rgba(255, 255, 255, 0.97);
-  border-bottom: 1px solid var(--line);
+  gap: 2rem;
 }
 
-.brand {
+.logo {
   color: var(--navy);
-  font-size: clamp(1.3rem, 2.4vw, 2rem);
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
   text-decoration: none;
-  white-space: nowrap;
 }
 
-.brand strong {
-  color: var(--gold);
-  font-weight: 500;
-}
-
-.nav {
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
-.nav a {
-  color: var(--ink);
+nav a {
+  color: var(--navy);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.92rem;
-  padding-bottom: 5px;
-  border-bottom: 3px solid transparent;
+  font-size: 0.95rem;
+  font-weight: bold;
 }
 
-.nav a:hover,
-.nav a.active {
-  border-bottom-color: var(--teal);
+nav a:hover {
+  color: var(--gold);
 }
 
-/* BANNER PANORÁMICO
-   La imagen debe contener las ocho fotografías en una sola línea.
-   Se muestra completa, sin deformación ni recorte. */
+/* ==============================
+   HERO / HEADER IMAGE
+============================== */
+
 .hero {
   width: 100%;
   margin: 0;
@@ -89,165 +92,374 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  max-width: none;
   margin: 0;
+  padding: 0;
 }
 
-/* CONTENIDO GENERAL */
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+  width: 100%;
+}
+
 .intro,
 .section {
-  max-width: 1120px;
+  width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 85px 6vw;
+  padding: 4rem 0;
 }
 
-.intro h2,
-.section h2 {
-  max-width: 850px;
+.intro {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.intro h1 {
   color: var(--navy);
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.2;
-  margin: 8px 0 22px;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
-.intro p,
-.section p {
-  max-width: 850px;
+.intro p {
+  font-size: 1.15rem;
+  line-height: 1.8;
 }
+
+/* ==============================
+   TITLES
+============================== */
 
 .section-label {
   color: var(--gold);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
+
+h2 {
+  color: var(--navy);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: var(--navy);
+  font-size: 1.45rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* ==============================
+   TWO-COLUMN SECTIONS
+============================== */
 
 .two-columns {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 70px;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
 }
 
-.topic-card {
-  padding: 30px;
-  background: var(--cream);
-  border-top: 5px solid var(--gold);
+/* Columna izquierda: más ancha */
+
+.two-columns > div:first-child {
+  min-width: 0;
+  padding-right: 1rem;
 }
 
-.topic-card h3 {
+/* Columna derecha */
+
+.two-columns > div:last-child {
+  min-width: 0;
+}
+
+/* ==============================
+   LISTS
+============================== */
+
+ul {
+  padding-left: 1.6rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+.two-columns > div:first-child ul {
+  padding-left: 1.6rem;
+}
+
+.two-columns > div:first-child li {
+  margin-bottom: 1.2rem;
+  line-height: 1.65;
+}
+
+.two-columns > div:last-child li {
+  margin-bottom: 0.8rem;
+  line-height: 1.65;
+}
+
+/* ==============================
+   CALL FOR PAPERS
+============================== */
+
+.paper-limit {
+  font-weight: normal;
+}
+
+.two-columns strong {
   color: var(--navy);
-  margin-top: 0;
 }
 
-.text-link {
-  color: var(--navy);
+/* Destaca ligeramente los tipos de contribución */
+
+.two-columns > div:first-child li strong {
   font-weight: 700;
 }
 
-/* SECCIÓN CLARA */
-.light-section {
-  max-width: none;
-  padding-left: 10%;
-  padding-right: 10%;
+/* ==============================
+   PANEL DERECHO
+============================== */
+
+.topic-panel {
   background: var(--cream);
+  border-top: 6px solid var(--gold);
+  padding: 2.5rem 2.5rem 2rem;
 }
 
-/* FECHAS */
+.topic-panel h3 {
+  margin-bottom: 1.8rem;
+}
+
+.topic-panel ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.topic-panel li {
+  margin-bottom: 0.8rem;
+}
+
+/* Si el panel derecho no tiene class="topic-panel",
+   se aplica igualmente a la segunda columna */
+
+.two-columns > div:last-child {
+  background: var(--cream);
+  border-top: 6px solid var(--gold);
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.two-columns > div:last-child h3 {
+  margin-bottom: 1.8rem;
+}
+
+.two-columns > div:last-child ul {
+  margin-bottom: 0;
+}
+
+/* ==============================
+   CARDS
+============================== */
+
+.topic-card {
+  background: var(--cream);
+  border-top: 5px solid var(--gold);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-card h3 {
+  margin-top: 0;
+}
+
+.topic-card p {
+  margin-bottom: 0;
+}
+
+/* ==============================
+   DATE GRID
+============================== */
+
 .date-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-top: 35px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.date-grid div {
-  padding: 22px;
-  background: white;
-  border-left: 3px solid var(--teal);
+.date-card {
+  background: var(--cream);
+  border-top: 5px solid var(--gold);
+  padding: 1.5rem;
 }
 
-.date-grid strong,
-.date-grid span {
-  display: block;
+.date-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
 }
 
-.date-grid span {
-  margin-top: 8px;
-  color: #65727b;
+.date-card p {
+  margin-bottom: 0;
 }
 
-/* ELEMENTOS AUXILIARES */
-.placeholder {
-  color: #65727b;
-  font-style: italic;
-}
+/* ==============================
+   CONTACT SECTION
+============================== */
 
-/* CONTACTO */
 .contact-section {
-  padding: 75px 8vw;
-  color: white;
-  background: var(--navy);
-  text-align: center;
+  background: var(--light-blue);
+  padding: 4rem 5%;
 }
 
-.contact-section h2 {
-  margin-top: 0;
-  font-size: 2.2rem;
+.contact-section .section {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.contact-section p {
-  max-width: 650px;
-  margin: 0 auto 25px;
-}
+/* ==============================
+   BUTTONS
+============================== */
 
-.button-light {
+.button {
+  display: inline-block;
   background: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  transition: background 0.2s ease;
 }
 
-/* PIE DE PÁGINA */
+.button:hover {
+  background: var(--navy);
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
 footer {
-  padding: 22px 6vw;
-  color: white;
-  background: #052c45;
+  background: var(--navy);
+  color: var(--white);
   text-align: center;
-  font-size: 0.85rem;
+  padding: 2rem 5%;
+  font-size: 0.9rem;
 }
 
-/* TABLETS */
-@media (max-width: 900px) {
-  .site-header {
-    align-items: flex-start;
+footer p {
+  margin: 0;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* Tablets */
+
+@media (max-width: 1100px) {
+  .two-columns {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 2rem;
+  }
+
+  .two-columns > div:last-child {
+    padding: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 850px) {
+  header {
+    position: static;
+  }
+
+  .header-container {
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start;
   }
 
-  .nav {
+  nav {
     justify-content: flex-start;
-    gap: 13px;
+    gap: 0.8rem;
   }
 
-  .two-columns,
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .two-columns > div:first-child {
+    padding-right: 0;
+  }
+
+  .two-columns > div:last-child {
+    padding: 2rem;
+  }
+
   .date-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-/* MÓVILES */
-@media (max-width: 600px) {
-  .hero img {
-    width: 100%;
-    height: auto;
   }
 
   .intro,
   .section {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    width: 88%;
+    padding: 3rem 0;
   }
 
-  .light-section {
-    padding-left: 6vw;
-    padding-right: 6vw;
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 1rem 6%;
+  }
+
+  .intro,
+  .section {
+    width: 86%;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .topic-panel,
+  .two-columns > div:last-child {
+    padding: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.4rem;
   }
 }
