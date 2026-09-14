@@ -165,7 +165,7 @@ main {
 .section-label {
   color: var(--gold);
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 1000;
   letter-spacing: 4px;
   line-height: 1.2;
   text-transform: uppercase;
