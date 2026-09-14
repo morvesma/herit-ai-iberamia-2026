@@ -229,23 +229,25 @@ footer {
     padding-bottom: 55px;
   }
 }
-/* Banner a todo lo ancho de la pantalla */
+/* Corrección definitiva del banner */
 .hero {
-  width: 100vw !important;
+  width: 100% !important;
   max-width: none !important;
-  height: 50vh !important;
+  height: auto !important;
   min-height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
-  background: var(--cream);
+  background: transparent;
 }
 
 .hero img {
-  display: block;
-  width: 100vw !important;
+  display: block !important;
+  width: 100% !important;
   max-width: none !important;
-  height: 50vh !important;
-  object-fit: cover;
-  object-position: center center;
+  height: auto !important;
+  min-height: 0 !important;
+  object-fit: initial !important;
+  object-position: initial !important;
+  margin: 0 !important;
 }
