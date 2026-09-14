@@ -168,3 +168,12 @@ footer {
   .hero h2 { font-size: 1.35rem; }
   .intro, .section { padding-top: 55px; padding-bottom: 55px; }
 }
+
+.hero {
+  min-height: 300px !important;
+  height: 300px !important;
+  padding: 20px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
