@@ -9,9 +9,13 @@
   --line: #d9d3c8;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -21,6 +25,7 @@ body {
   background: white;
 }
 
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -30,7 +35,7 @@ body {
   justify-content: space-between;
   gap: 30px;
   padding: 18px 4vw;
-  background: rgba(255,255,255,.96);
+  background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid var(--line);
 }
 
@@ -38,7 +43,7 @@ body {
   color: var(--navy);
   font-size: clamp(1.3rem, 2.4vw, 2rem);
   font-weight: 700;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -59,7 +64,7 @@ body {
   color: var(--ink);
   text-decoration: none;
   font-weight: 600;
-  font-size: .92rem;
+  font-size: 0.92rem;
   padding-bottom: 5px;
   border-bottom: 3px solid transparent;
 }
@@ -69,12 +74,13 @@ body {
   border-bottom-color: var(--teal);
 }
 
-/* BANNER PRINCIPAL: ocupa aproximadamente la mitad superior de la pantalla */
+/* BANNER PANORÁMICO
+   La imagen debe contener las ocho fotografías en una sola línea.
+   Se muestra completa, sin deformación ni recorte. */
 .hero {
   width: 100%;
-  height: 50vh;
-  min-height: 300px;
-  max-height: 600px;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background: var(--cream);
 }
@@ -82,11 +88,12 @@ body {
 .hero img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  max-width: none;
+  margin: 0;
 }
 
+/* CONTENIDO GENERAL */
 .intro,
 .section {
   max-width: 1120px;
@@ -103,14 +110,22 @@ body {
   margin: 8px 0 22px;
 }
 
-.intro p:not(.section-label),
-.section p:not(.section-label) {
+.intro p,
+.section p {
   max-width: 850px;
+}
+
+.section-label {
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .two-columns {
   display: grid;
-  grid-template-columns: 1.15fr .85fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 70px;
 }
 
@@ -130,13 +145,15 @@ body {
   font-weight: 700;
 }
 
+/* SECCIÓN CLARA */
 .light-section {
-  background: var(--cream);
   max-width: none;
   padding-left: 10%;
   padding-right: 10%;
+  background: var(--cream);
 }
 
+/* FECHAS */
 .date-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -146,8 +163,8 @@ body {
 
 .date-grid div {
   padding: 22px;
-  border-left: 3px solid var(--teal);
   background: white;
+  border-left: 3px solid var(--teal);
 }
 
 .date-grid strong,
@@ -160,11 +177,13 @@ body {
   color: #65727b;
 }
 
+/* ELEMENTOS AUXILIARES */
 .placeholder {
   color: #65727b;
   font-style: italic;
 }
 
+/* CONTACTO */
 .contact-section {
   padding: 75px 8vw;
   color: white;
@@ -173,8 +192,8 @@ body {
 }
 
 .contact-section h2 {
-  font-size: 2.2rem;
   margin-top: 0;
+  font-size: 2.2rem;
 }
 
 .contact-section p {
@@ -186,14 +205,16 @@ body {
   background: var(--gold);
 }
 
+/* PIE DE PÁGINA */
 footer {
   padding: 22px 6vw;
-  background: #052c45;
   color: white;
+  background: #052c45;
   text-align: center;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
+/* TABLETS */
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -212,15 +233,11 @@ footer {
   }
 }
 
+/* MÓVILES */
 @media (max-width: 600px) {
-  .hero {
-    height: 50vh;
-    min-height: 240px;
-  }
-
   .hero img {
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 
   .intro,
@@ -228,26 +245,9 @@ footer {
     padding-top: 55px;
     padding-bottom: 55px;
   }
-}
-/* Corrección definitiva del banner */
-.hero {
-  width: 100% !important;
-  max-width: none !important;
-  height: auto !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden;
-  background: transparent;
-}
 
-.hero img {
-  display: block !important;
-  width: 100% !important;
-  max-width: none !important;
-  height: auto !important;
-  min-height: 0 !important;
-  object-fit: initial !important;
-  object-position: initial !important;
-  margin: 0 !important;
+  .light-section {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
 }
