@@ -1,14 +1,14 @@
-/* ==============================
-   GENERAL
-============================== */
+/* =================================
+   VARIABLES GENERALES
+================================= */
 
 :root {
-  --navy: #062b49;
+  --navy: #062f50;
   --gold: #b47b2c;
-  --cream: #f4f1ea;
-  --light-blue: #eef4f7;
-  --text: #092d4d;
+  --cream: #f5f1e8;
+  --light-blue: #eef5f7;
   --white: #ffffff;
+  --text: #092f50;
 }
 
 * {
@@ -21,64 +21,90 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
   color: var(--text);
   background: var(--white);
-  line-height: 1.6;
-  font-size: 17px;
 }
 
-/* ==============================
+/* =================================
    HEADER
-============================== */
+================================= */
 
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
   background: var(--white);
   border-bottom: 1px solid #e5e5e5;
-  padding: 1rem 5%;
+  padding: 1.2rem 4%;
 }
 
 .header-container {
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
 }
 
+/* Logo superior izquierdo */
+
 .logo {
+  display: inline-block;
   color: var(--navy);
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 2.25rem;
+  font-weight: 700;
   letter-spacing: 1px;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo:hover {
   text-decoration: none;
 }
 
+.logo span {
+  color: var(--navy);
+}
+
+.logo strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* Menú de navegación */
+
 nav {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 nav a {
   color: var(--navy);
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: bold;
+  white-space: nowrap;
 }
 
 nav a:hover {
   color: var(--gold);
 }
 
-/* ==============================
-   HERO / HEADER IMAGE
-============================== */
+/* =================================
+   IMAGEN PRINCIPAL / HERO
+================================= */
 
 .hero {
   width: 100%;
@@ -96,31 +122,35 @@ nav a:hover {
   padding: 0;
 }
 
-/* ==============================
-   MAIN CONTENT
-============================== */
+/* =================================
+   CONTENIDO PRINCIPAL
+================================= */
 
 main {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .intro,
 .section {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 4rem 0;
 }
 
 .intro {
-  text-align: center;
   max-width: 1000px;
+  text-align: center;
 }
 
 .intro h1 {
   color: var(--navy);
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
 }
 
 .intro p {
@@ -128,14 +158,14 @@ main {
   line-height: 1.8;
 }
 
-/* ==============================
-   TITLES
-============================== */
+/* =================================
+   TÍTULOS
+================================= */
 
 .section-label {
   color: var(--gold);
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -144,6 +174,7 @@ main {
 h2 {
   color: var(--navy);
   font-size: 2rem;
+  line-height: 1.3;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -151,6 +182,7 @@ h2 {
 h3 {
   color: var(--navy);
   font-size: 1.45rem;
+  line-height: 1.35;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
@@ -160,19 +192,20 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* ==============================
-   TWO-COLUMN SECTIONS
-============================== */
+/* =================================
+   SECCIONES EN DOS COLUMNAS
+================================= */
 
 .two-columns {
   width: 100%;
+
   display: grid;
-  grid-template-columns: 1.45fr 1fr;
+  grid-template-columns: 1.55fr 1fr;
   gap: 3.5rem;
   align-items: start;
 }
 
-/* Columna izquierda: más ancha */
+/* Columna izquierda más ancha */
 
 .two-columns > div:first-child {
   min-width: 0;
@@ -185,9 +218,9 @@ p {
   min-width: 0;
 }
 
-/* ==============================
-   LISTS
-============================== */
+/* =================================
+   LISTAS
+================================= */
 
 ul {
   padding-left: 1.6rem;
@@ -195,15 +228,35 @@ ul {
 
 li {
   margin-bottom: 0.8rem;
+  line-height: 1.65;
 }
+
+/* Lista de tipos de contribuciones */
 
 .two-columns > div:first-child ul {
   padding-left: 1.6rem;
 }
 
 .two-columns > div:first-child li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.25rem;
   line-height: 1.65;
+}
+
+.two-columns strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.paper-limit {
+  font-weight: normal;
+}
+
+/* Lista de topics */
+
+.two-columns > div:last-child ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.5rem;
 }
 
 .two-columns > div:last-child li {
@@ -211,27 +264,9 @@ li {
   line-height: 1.65;
 }
 
-/* ==============================
-   CALL FOR PAPERS
-============================== */
-
-.paper-limit {
-  font-weight: normal;
-}
-
-.two-columns strong {
-  color: var(--navy);
-}
-
-/* Destaca ligeramente los tipos de contribución */
-
-.two-columns > div:first-child li strong {
-  font-weight: 700;
-}
-
-/* ==============================
-   PANEL DERECHO
-============================== */
+/* =================================
+   PANEL DERECHO: TOPICS OF INTEREST
+================================= */
 
 .topic-panel {
   background: var(--cream);
@@ -248,12 +283,11 @@ li {
   padding-left: 1.5rem;
 }
 
-.topic-panel li {
-  margin-bottom: 0.8rem;
-}
-
-/* Si el panel derecho no tiene class="topic-panel",
-   se aplica igualmente a la segunda columna */
+/*
+   Si el div derecho no tiene la clase
+   topic-panel, también se le aplica
+   este estilo automáticamente.
+*/
 
 .two-columns > div:last-child {
   background: var(--cream);
@@ -265,13 +299,9 @@ li {
   margin-bottom: 1.8rem;
 }
 
-.two-columns > div:last-child ul {
-  margin-bottom: 0;
-}
-
-/* ==============================
-   CARDS
-============================== */
+/* =================================
+   TARJETAS
+================================= */
 
 .topic-card {
   background: var(--cream);
@@ -288,9 +318,9 @@ li {
   margin-bottom: 0;
 }
 
-/* ==============================
-   DATE GRID
-============================== */
+/* =================================
+   FECHAS IMPORTANTES
+================================= */
 
 .date-grid {
   display: grid;
@@ -314,9 +344,9 @@ li {
   margin-bottom: 0;
 }
 
-/* ==============================
-   CONTACT SECTION
-============================== */
+/* =================================
+   SECCIÓN DE CONTACTO
+================================= */
 
 .contact-section {
   background: var(--light-blue);
@@ -328,28 +358,29 @@ li {
   padding-bottom: 0;
 }
 
-/* ==============================
-   BUTTONS
-============================== */
+/* =================================
+   BOTONES
+================================= */
 
 .button {
   display: inline-block;
   background: var(--gold);
   color: var(--white);
-  text-decoration: none;
-  font-weight: bold;
   padding: 0.8rem 1.5rem;
   border-radius: 3px;
+  font-weight: 700;
+  text-decoration: none;
   transition: background 0.2s ease;
 }
 
 .button:hover {
   background: var(--navy);
+  color: var(--white);
 }
 
-/* ==============================
+/* =================================
    FOOTER
-============================== */
+================================= */
 
 footer {
   background: var(--navy);
@@ -363,28 +394,36 @@ footer p {
   margin: 0;
 }
 
-/* ==============================
-   RESPONSIVE DESIGN
-============================== */
-
-/* Tablets */
+/* =================================
+   TABLETS
+================================= */
 
 @media (max-width: 1100px) {
+  .header-container {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+
   .two-columns {
-    grid-template-columns: 1.25fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 2.5rem;
   }
 
   .two-columns > div:last-child {
     padding: 2rem;
   }
-
-  .intro h1 {
-    font-size: 2.1rem;
-  }
 }
 
-/* Mobile */
+/* =================================
+   PANTALLAS PEQUEÑAS
+================================= */
 
 @media (max-width: 850px) {
   header {
@@ -398,7 +437,7 @@ footer p {
 
   nav {
     justify-content: flex-start;
-    gap: 0.8rem;
+    gap: 0.8rem 1.2rem;
   }
 
   .two-columns {
@@ -433,7 +472,9 @@ footer p {
   }
 }
 
-/* Small mobile screens */
+/* =================================
+   TELÉFONOS
+================================= */
 
 @media (max-width: 500px) {
   body {
@@ -442,6 +483,10 @@ footer p {
 
   header {
     padding: 1rem 6%;
+  }
+
+  .logo {
+    font-size: 1.9rem;
   }
 
   .intro,
@@ -453,13 +498,14 @@ footer p {
     font-size: 1.8rem;
   }
 
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
   .topic-panel,
   .two-columns > div:last-child {
     padding: 1.5rem;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.4rem;
   }
 }
