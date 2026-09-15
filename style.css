@@ -512,6 +512,22 @@ footer p {
   }
 }
 
+.opening-quote {
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .opening-quote p:first-child {
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .opening-quote p:last-child {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
 .language-selector {
   display: inline-flex;
   gap: 8px;
