@@ -511,3 +511,14 @@ footer p {
     padding: 1.5rem;
   }
 }
+
+.language-selector {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.language-selector a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
