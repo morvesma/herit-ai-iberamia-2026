@@ -513,20 +513,20 @@ footer p {
 }
 
 .opening-quote {
-        padding: 40px 25px;
+        padding: 30px 25px;
         text-align: center;
     }
 
     .opening-quote p:first-child {
-        font-size: 28px;
+        font-size: 20px;
         line-height: 1.5;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .opening-quote p:last-child {
-        font-size: 20px;
-        line-height: 1.5;
-        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 15px;
     }
 .language-selector {
   display: inline-flex;
