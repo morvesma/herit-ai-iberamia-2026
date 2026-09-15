@@ -584,3 +584,34 @@ footer p {
 .opening-quote p:last-child {
   font-size: 1.5rem !important;
 }
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.brand-title {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #003b68;
+    line-height: 1.1;
+}
+
+.brand-title .year {
+    color: #b57b2a;
+}
+
+.co-located {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #003b68;
+    margin-top: 5px;
+    letter-spacing: 0.3px;
+}
+
+.co-located strong {
+    color: #b57b2a;
+    font-weight: 600;
+}
