@@ -507,17 +507,17 @@ footer p {
 @media (max-width: 500px) {
 
      .opening-quote {
-        margin: 2rem auto;
+        margin: 1rem auto;
         padding: 1.5rem 1rem;
     }
 
     .opening-quote p:first-child {
-        font-size: 1.8rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
 
     .opening-quote p:last-child {
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
    body {
