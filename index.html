@@ -49,8 +49,20 @@
 
   <main>
     <section id="home" class="hero">
-      <img src="assets/cabecera.png" alt="HERIT-AI workshop banner featuring Iberoamerican cultural heritage">
-    </section>
+
+    <picture>
+        <!-- Banner adaptado para celulares -->
+        <source
+            media="(max-width: 768px)"
+            srcset="assets/cabecera-mobile.png">
+
+        <!-- Banner original para computadoras -->
+        <img
+            src="assets/cabecera.png"
+            alt="HERIT-AI workshop banner featuring Iberoamerican cultural heritage">
+    </picture>
+
+</section>
 
 <section class="opening-quote">
   <p>“Life is not what one lived, but what one remembers and how one remembers it in order to recount it.”</p>
