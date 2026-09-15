@@ -512,16 +512,16 @@ footer p {
     }
 
     .opening-quote p:first-child {
-        font-size: 1rem;
+        font-size: 0.6rem;
         line-height: 1.4;
     }
 
     .opening-quote p:last-child {
-        font-size: 1rem;
+        font-size: 0.6rem;
         line-height: 1.4;
     }
    body {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   header {
