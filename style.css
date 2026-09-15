@@ -562,3 +562,8 @@ footer p {
   margin-bottom: 0.4rem;
 }
 
+.opening-quote blockquote,
+.opening-quote blockquote p {
+  color: #b47a25 !important;
+}
+
