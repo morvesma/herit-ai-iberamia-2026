@@ -19,11 +19,11 @@
 .opening-quote p:first-child {
     font-size: 1.5rem;
     line-height: 1.4;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .opening-quote p:last-child {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     margin-top: 1rem;
 }
