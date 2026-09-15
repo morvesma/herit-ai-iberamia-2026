@@ -580,3 +580,7 @@ footer p {
   line-height: 1.3;
   margin: 0.3rem 0;
 }
+
+.opening-quote p:last-child {
+  font-size: 1.5rem !important;
+}
