@@ -622,7 +622,9 @@ footer p {
 
 /* Versión móvil */
 @media (max-width: 768px) {
-
+  .site-header {
+        position: relative;
+    }
   .menu-toggle {
         position: absolute;
         top: 35px;
