@@ -629,7 +629,7 @@ footer p {
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 100px;
+        top: 80px;
         right: 30px;
         z-index: 9999;
 
