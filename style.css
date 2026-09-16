@@ -738,5 +738,6 @@ footer p {
   font-weight: 700;
   text-decoration: none;
   margin-left: 0rem;
-  transform: translateY(5px);
+  position: relative;
+  top: 5px;
 }
