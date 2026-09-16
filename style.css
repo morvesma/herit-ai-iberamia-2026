@@ -689,3 +689,17 @@ footer p {
         margin: 0 !important;
     }
 }
+
+/* Ocultar menú hamburguesa en laptop/desktop */
+#menuToggle {
+    display: none !important;
+}
+
+/* Mostrar menú hamburguesa solo en móvil */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block !important;
+        font-size: 50px !important;
+        line-height: 1 !important;
+    }
+}
