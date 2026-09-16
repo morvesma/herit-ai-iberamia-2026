@@ -713,3 +713,17 @@ footer p {
         line-height: 1 !important;
     }
 }
+
+.nav-submit {
+  padding: 0.6rem 1rem;
+  border: 1px solid #b47a25;
+  border-radius: 4px;
+  color: #b47a25;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.nav-submit:hover {
+  text-decoration: none;
+}
