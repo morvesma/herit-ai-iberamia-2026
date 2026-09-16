@@ -626,41 +626,40 @@ footer p {
         position: relative;
     }
 
-     .menu-toggle {
-    display: block !important;
-    position: fixed !important;
-    top: 135px !important;
-    right: 30px !important;
-    z-index: 999999 !important;
+        .menu-toggle {
+        display: block !important;
+        position: fixed !important;
+        top: 135px !important;
+        right: 30px !important;
+        z-index: 999999 !important;
 
-    background: white !important;
-    border: none !important;
-    color: #12395b !important;
-    font-size: 32px !important;
-    line-height: 1 !important;
-    padding: 5px 10px !important;
-    cursor: pointer !important;
-    pointer-events: auto !important;
-  }
+        background: white !important;
+        border: none !important;
+        color: #12395b !important;
+        font-size: 32px !important;
+        line-height: 1 !important;
+        padding: 5px 10px !important;
+        cursor: pointer !important;
+    }
 
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 15px 40px;
-    box-sizing: border-box;
-    background: white;
-  }
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        background: white;
+    }
 
-  .nav.open {
-    display: flex !important;
-  }
+    .nav.open {
+        display: flex !important;
+    }
 
-  .nav a {
-    margin: 10px 0;
-    font-size: 18px;
-  }
+    .nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
 
     .language-selector {
         display: flex;
