@@ -645,10 +645,7 @@ footer p {
     display: none;
 }
 
-.nav.open {
-    display: flex !important;
-    flex-direction: column;
-}
+
 
     /* Menú cerrado */
     .nav {
