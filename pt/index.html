@@ -21,7 +21,10 @@
         Em colaboração com <strong>IBERAMIA 2026</strong>
     </div>
 
-      <button class="menu-toggle" id="menuToggle" type="button">
+     <button 
+    id="menuToggle" 
+    type="button" 
+    style="position:fixed; top:135px; right:30px; z-index:9999999; font-size:20px; line-height:1;">
     ☰
 </button>
 
@@ -318,13 +321,29 @@
   <footer>
     <p>HERIT-AI 2026 · IBERAMIA 2026 · Asunción, Paraguay</p>
   </footer>
-  <script>
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-menuToggle.onclick = function() {
-    navMenu.classList.toggle("open");
-};
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    // Abrir / cerrar con el botón ☰
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
+    });
+
+    // Cerrar al seleccionar cualquier enlace del menú
+    navMenu.addEventListener("click", function (event) {
+
+        const link = event.target.closest("a");
+
+        if (link) {
+            navMenu.classList.remove("open");
+        }
+
+    });
+
+});
 </script>
 </body>
 </html>
