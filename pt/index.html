@@ -21,7 +21,11 @@
         Em colaboração com <strong>IBERAMIA 2026</strong>
     </div>
 
-    <nav class="nav">
+      <button class="menu-toggle" id="menuToggle" type="button">
+    ☰
+</button>
+
+    <nav class="nav" id="navMenu">
     <a class="active" href="#home">Início</a>
 <a href="#call">Chamada para artigos</a>
 <a href="#dates">Datas importantes</a>
@@ -40,8 +44,20 @@
 
   <main>
     <section id="home" class="hero">
-      <img src="cabecera-pt.png" alt="HERIT-AI workshop banner featuring Iberoamerican cultural heritage">
-    </section>
+
+    <picture>
+        <!-- Banner adaptado para celulares -->
+        <source
+            media="(max-width: 768px)"
+            srcset="assets/cabecera-pt-movil.png">
+
+        <!-- Banner original para computadoras -->
+        <img
+            src="assets/cabecera.png"
+            alt="HERIT-AI workshop banner featuring Iberoamerican cultural heritage">
+    </picture>
+
+</section>
 
     <section class="opening-quote">
   <p class="quote-text">“A vida não é a que a gente viveu, e sim a que a gente recorda e como recorda para contá-la.”</p>
@@ -302,6 +318,14 @@
   <footer>
     <p>HERIT-AI 2026 · IBERAMIA 2026 · Asunción, Paraguay</p>
   </footer>
+  <script>
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.onclick = function() {
+    navMenu.classList.toggle("open");
+};
+</script>
 </body>
 </html>
 
