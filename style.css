@@ -722,7 +722,7 @@ footer p {
   font-weight: 700;
   text-decoration: none;
   margin-left: 0rem;
-   transform: translateY(5px);
+   margin-top: 0.5rem;
 }
 
 .nav-submit:hover {
