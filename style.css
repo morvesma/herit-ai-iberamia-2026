@@ -642,24 +642,28 @@ footer p {
         cursor: pointer !important;
     }
 
-    .nav {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding: 15px 40px;
-        box-sizing: border-box;
-        background: white;
-    }
+.nav {
+    display: none;
+    position: fixed;
+    top: 180px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: white;
+    z-index: 999998;
+}
 
-    .nav.open {
-        display: flex !important;
-    }
+.nav.open {
+    display: flex !important;
+}
 
-    .nav a {
-        margin: 10px 0;
-        font-size: 18px;
-    }
+.nav a {
+    margin: 10px 0;
+    font-size: 18px;
+}
 
     .language-selector {
         display: flex;
