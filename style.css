@@ -627,15 +627,16 @@ footer p {
     }
 .menu-toggle {
     position: fixed;
-    top: 25px;
+    top: 180px;
     right: 30px;
-    z-index: 1000;
+    z-index: 9999;
 
     background: white;
     border: none;
     color: #12395b;
     font-size: 32px;
     line-height: 1;
+    padding: 5px 10px;
     cursor: pointer;
   }
    
