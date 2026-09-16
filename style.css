@@ -703,3 +703,13 @@ footer p {
         line-height: 1 !important;
     }
 }
+
+@media (max-width: 768px) {
+    #menuToggle {
+        font-size: 32px !important;
+        width: auto !important;
+        height: auto !important;
+        padding: 5px 10px !important;
+        line-height: 1 !important;
+    }
+}
