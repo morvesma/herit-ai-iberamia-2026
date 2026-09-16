@@ -17,13 +17,13 @@
 }
 
 .opening-quote p:first-child {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.4;
     margin-bottom: 1rem;
 }
 
 .opening-quote p:last-child {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.4;
     margin-top: 0.6rem;
 }
@@ -512,12 +512,12 @@ footer p {
     }
 
     .opening-quote p:first-child {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         line-height: 1.4;
     }
 
     .opening-quote p:last-child {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         line-height: 1.4;
     }
    body {
