@@ -622,25 +622,25 @@ footer p {
 
 /* Versión móvil */
 @media (max-width: 768px) {
-  .site-header {
+ .site-header {
         position: relative;
     }
-.menu-toggle {
-    position: fixed;
-    top: 180px;
-    right: 30px;
-    z-index: 9999;
 
-    background: white;
-    border: none;
-    color: #12395b;
-    font-size: 32px;
-    line-height: 1;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-   
-    
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 180px;
+        right: 30px;
+        z-index: 9999;
+
+        background: white;
+        border: none;
+        color: #12395b;
+        font-size: 32px;
+        line-height: 1;
+        padding: 5px 10px;
+        cursor: pointer;
+    }    
    .nav {
     display: none;
 }
