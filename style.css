@@ -504,7 +504,7 @@ footer p {
    TELÉFONOS
 ================================= */
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
      .opening-quote {
         margin: 1rem auto;
