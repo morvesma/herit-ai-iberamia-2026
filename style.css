@@ -721,23 +721,12 @@ footer p {
   color: #b47a25;
   font-weight: 700;
   text-decoration: none;
-  margin-left: 0rem;
-   margin-top: 1rem;
+  margin-left: auto;
+  margin-top: 1rem;
+  position: relative;
+  top: 8px;
 }
 
 .nav-submit:hover {
   text-decoration: none;
-}
-
-
-.nav-submit {
-  padding: 0.6rem 1rem;
-  border: 1px solid #b47a25;
-  border-radius: 4px;
-  color: #b47a25;
-  font-weight: 700;
-  text-decoration: none;
-  margin-right: 0rem;
-  position: relative;
-  top: 8px;
 }
