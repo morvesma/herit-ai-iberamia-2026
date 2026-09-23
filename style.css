@@ -733,7 +733,7 @@ footer p {
 
 @media (max-width: 600px) {
   .nav-submit {
-    font-size: 13px;
+    font-size: 8px;
     padding: 0.45rem 0.7rem;
   }
 }
