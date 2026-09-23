@@ -730,3 +730,10 @@ footer p {
 .nav-submit:hover {
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .nav-submit {
+    font-size: 13px;
+    padding: 0.45rem 0.7rem;
+  }
+}
