@@ -739,3 +739,10 @@ footer p {
     margin: 5px 0 !important;
   }
 }
+
+.keynote-block {
+    background-color: #F3F0E8;
+    border-top: 6px solid #B47A25;
+    color: #003B66;
+}
+
