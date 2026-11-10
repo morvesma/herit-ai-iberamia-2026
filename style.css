@@ -774,3 +774,161 @@ footer p {
   .profesora-info h3 {
     margin-top: 0;
   }
+
+
+.heritai-program {
+  --navy: #07345a;
+  --gold: #b77b2b;
+  --cream: #f5f1e8;
+  --cream-light: #faf8f3;
+  --cream-dark: #eee7d9;
+  --text: #173c5b;
+
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 24px 28px;
+  background: var(--cream);
+  border-top: 6px solid var(--gold);
+  color: var(--navy);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.program-title {
+  color: var(--navy);
+  font-size: 28px;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.program-item {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  align-items: center;
+  padding: 15px 18px;
+  min-height: 58px;
+  background: var(--cream-light);
+  border: none;
+  border-left: 3px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(7, 52, 90, 0.08);
+}
+
+.program-time {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  white-space: nowrap;
+  border-right: 2px solid #d9d0c0;
+  padding-right: 18px;
+}
+
+.program-content {
+  padding-left: 24px;
+  min-width: 0;
+}
+
+.program-content h3 {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.program-content h3 span {
+  font-weight: 500;
+}
+
+.program-type {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.speaker {
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 3px 0 0;
+}
+
+.authors {
+  color: var(--text);
+  font-size: 13px;
+  margin: 7px 0 0;
+  line-height: 1.4;
+}
+
+/* Opening and closing */
+.opening,
+.closing {
+  background: #faf8f3;
+  border-left-color: #d9d0c0;
+}
+
+/* Scientific papers */
+.paper {
+  background: #f1ede4;
+  border-left-color: #d9d0c0;
+}
+
+/* Keynotes */
+.keynote {
+  background: #eee7d9;
+  border-left-color: var(--gold);
+}
+
+.keynote .program-type {
+  color: var(--gold);
+}
+
+/* Coffee break */
+.break {
+  background: #f2eadb;
+  border-left-color: var(--gold);
+}
+
+.break .program-time {
+  border-right-color: #c9a46c;
+}
+
+@media (max-width: 650px) {
+  .heritai-program {
+    padding: 18px 12px;
+    margin: 15px auto;
+  }
+
+  .program-title {
+    font-size: 23px;
+  }
+
+  .program-item {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    padding: 14px;
+  }
+
+  .program-time {
+    border-right: none;
+    border-bottom: 1px solid #d9d0c0;
+    padding: 0 0 8px;
+    font-size: 14px;
+  }
+
+  .program-content {
+    padding-left: 0;
+  }
+
+  .program-content h3 {
+    font-size: 14px;
+  }
+}
+
