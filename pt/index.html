@@ -432,96 +432,188 @@ Seu trabalho busca promover sistemas de inteligência artificial mais inclusivos
   <p class="section-label">PROGRAMA</p>
   <h2>Programa da Oficina</h2>
   
-<div style="max-width:1200px; width:calc(100% - 32px); margin:35px auto; padding:25px 28px; box-sizing:border-box; background:#f5f1e8; border-top:5px solid #b77b2b; font-family:Arial,Helvetica,sans-serif; color:#07345a;">
 
-  <h2 style="font-size:28px; color:#07345a; margin:0 0 25px 0; font-weight:700;">
-    Programa
-  </h2>
+<style>
+  .herit-program {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .herit-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 10px;
+    padding: 18px;
+    box-sizing: border-box;
+    background: #faf8f3;
+    border-left: 4px solid #d9d0c0;
+    box-shadow: 0 2px 5px rgba(0,0,0,.10);
+    min-width: 0;
+  }
+
+  .herit-time {
+    flex: 0 0 155px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .herit-content {
+    flex: 1;
+    min-width: 0;
+    border-left: 2px solid #d9d0c0;
+    padding-left: 24px;
+    overflow-wrap: anywhere;
+  }
+
+  .herit-content strong {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .herit-type {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a7557;
+    margin-bottom: 6px;
+  }
+
+  .herit-speaker {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .herit-authors {
+    font-size: 13px;
+    margin-top: 7px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 600px) {
+    .herit-item {
+      display: block;
+      padding: 14px 13px;
+      margin-bottom: 9px;
+    }
+
+    .herit-time {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .herit-content {
+      border-left: none;
+      border-top: 1px solid #d9d0c0;
+      padding: 10px 0 0;
+    }
+
+    .herit-content strong {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .herit-type {
+      font-size: 11px;
+    }
+
+    .herit-speaker {
+      font-size: 14px;
+    }
+
+    .herit-authors {
+      font-size: 12px;
+    }
+  }
+</style>
+
+<div class="herit-program">
 
   <!-- ABERTURA -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">09:00–09:10</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <strong style="font-size:16px;">ABERTURA E BOAS-VINDAS</strong>
+  <div class="herit-item">
+    <div class="herit-time">09:00–09:10</div>
+    <div class="herit-content">
+      <strong>ABERTURA E BOAS-VINDAS</strong>
       <span> · Início do evento</span>
     </div>
   </div>
 
   <!-- PALESTRA MAGISTRAL 1 -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#eee7d9; border-left:4px solid #b77b2b; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">09:10–10:00</div>
-    <div style="border-left:2px solid #c9a46c; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#b77b2b; margin-bottom:6px;">PALESTRA MAGISTRAL 1 · EM ESPANHOL</div>
-      <strong style="font-size:16px;">Can artificial intelligence understand a landscape?</strong>
-      <div style="font-size:15px; font-weight:600; margin-top:5px;">Prof. Laurie Alice Vera Jiménez</div>
+  <div class="herit-item" style="background:#eee7d9; border-left-color:#b77b2b;">
+    <div class="herit-time">09:10–10:00</div>
+    <div class="herit-content" style="border-left-color:#c9a46c;">
+      <div class="herit-type" style="color:#b77b2b;">PALESTRA MAGISTRAL 1 · EM ESPANHOL</div>
+      <strong>A inteligência artificial pode compreender uma paisagem?</strong>
+      <div class="herit-speaker">Prof. Laurie Alice Vera Jiménez</div>
     </div>
   </div>
 
   <!-- ARTIGO COMPLETO 1 -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">10:00–10:20</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#8a7557; margin-bottom:6px;">ARTIGO COMPLETO</div>
-      <strong style="font-size:16px;">Posthumous Privacy on Meta Platforms: A Systematic Review in Light of Artificial Intelligence Technologies</strong>
-      <div style="font-size:13px; margin-top:7px;">Giovanna Salvador · Cristiano Maciel · Vinicius Pereira</div>
+  <div class="herit-item">
+    <div class="herit-time">10:00–10:20</div>
+    <div class="herit-content">
+      <div class="herit-type">ARTIGO COMPLETO</div>
+      <strong>Privacidade póstuma nas plataformas da Meta: uma revisão sistemática à luz das tecnologias de inteligência artificial</strong>
+      <div class="herit-authors">Giovanna Salvador · Cristiano Maciel · Vinicius Pereira</div>
     </div>
   </div>
 
   <!-- RESUMO ESTENDIDO -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">10:20–10:35</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#8a7557; margin-bottom:6px;">RESUMO ESTENDIDO</div>
-      <strong style="font-size:16px;">Modelagem e avaliação ética de chatbots baseados em pessoas falecidas: um estudo com figuras históricas de Cuiabá utilizando RAG</strong>
-      <div style="font-size:13px; margin-top:7px;">Robert Cunha · Cristiano Maciel</div>
+  <div class="herit-item">
+    <div class="herit-time">10:20–10:35</div>
+    <div class="herit-content">
+      <div class="herit-type">RESUMO ESTENDIDO</div>
+      <strong>Modelagem e avaliação ética de chatbots baseados em pessoas falecidas: um estudo com figuras históricas de Cuiabá utilizando RAG</strong>
+      <div class="herit-authors">Robert Cunha · Cristiano Maciel</div>
     </div>
   </div>
 
   <!-- INTERVALO PARA O CAFÉ -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#f2eadb; border-left:4px solid #b77b2b; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">10:35–11:00</div>
-    <div style="border-left:2px solid #c9a46c; padding-left:24px;">
-      <strong style="font-size:16px;">INTERVALO PARA O CAFÉ</strong>
+  <div class="herit-item" style="background:#f2eadb; border-left-color:#b77b2b;">
+    <div class="herit-time">10:35–11:00</div>
+    <div class="herit-content" style="border-left-color:#c9a46c;">
+      <strong>INTERVALO PARA O CAFÉ</strong>
       <span> · Café e networking</span>
     </div>
   </div>
 
   <!-- PALESTRA MAGISTRAL 2 -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#eee7d9; border-left:4px solid #b77b2b; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">11:00–11:50</div>
-    <div style="border-left:2px solid #c9a46c; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#b77b2b; margin-bottom:6px;">PALESTRA MAGISTRAL 2</div>
-      <strong style="font-size:16px;">From Language Resources to Cultural Knowledge: Building AI for Guarani and Beyond</strong>
-      <div style="font-size:15px; font-weight:600; margin-top:5px;">Prof. Marvin Agüero Torales</div>
+  <div class="herit-item" style="background:#eee7d9; border-left-color:#b77b2b;">
+    <div class="herit-time">11:00–11:50</div>
+    <div class="herit-content" style="border-left-color:#c9a46c;">
+      <div class="herit-type" style="color:#b77b2b;">PALESTRA MAGISTRAL 2</div>
+      <strong>Dos recursos linguísticos ao conhecimento cultural: construindo IA para o guarani e além</strong>
+      <div class="herit-speaker">Prof. Marvin Agüero Torales</div>
     </div>
   </div>
 
   <!-- ARTIGO COMPLETO 2 -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">11:50–12:10</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#8a7557; margin-bottom:6px;">ARTIGO COMPLETO</div>
-      <strong style="font-size:16px;">From Digitized Holdings to Trustworthy AI-Ready Archives: Auditing and Characterizing a COOK Image Historical Corpus</strong>
-      <div style="font-size:13px; margin-top:7px;">José Longino Mendoza Valdés · Christian Quesada-López</div>
+  <div class="herit-item">
+    <div class="herit-time">11:50–12:10</div>
+    <div class="herit-content">
+      <div class="herit-type">ARTIGO COMPLETO</div>
+      <strong>De acervos digitalizados a arquivos confiáveis e preparados para IA: auditoria e caracterização de um corpus histórico de imagens COOK</strong>
+      <div class="herit-authors">José Longino Mendoza Valdés · Christian Quesada-López</div>
     </div>
   </div>
 
   <!-- ARTIGO COMPLETO 3 -->
-  <div style="display:flex; align-items:center; gap:24px; margin-bottom:10px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">12:10–12:30</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <div style="font-size:12px; font-weight:bold; color:#8a7557; margin-bottom:6px;">ARTIGO COMPLETO</div>
-      <strong style="font-size:16px;">Chatbot cultural como puente interactivo entre museos e investigadores: una metodología accesible basada en IA generativa y acervos estructurados</strong>
-      <div style="font-size:13px; margin-top:7px;">Zaida Larissa Fleitas Benítez</div>
+  <div class="herit-item">
+    <div class="herit-time">12:10–12:30</div>
+    <div class="herit-content">
+      <div class="herit-type">ARTIGO COMPLETO</div>
+      <strong>Chatbot cultural como ponte interativa entre museus e pesquisadores: uma metodologia acessível baseada em IA generativa e acervos estruturados</strong>
+      <div class="herit-authors">Zaida Larissa Fleitas Benítez</div>
     </div>
   </div>
 
   <!-- ENCERRAMENTO -->
-  <div style="display:flex; align-items:center; gap:24px; padding:18px; background:#faf8f3; border-left:4px solid #d9d0c0; box-shadow:0 2px 5px rgba(0,0,0,.10);">
-    <div style="flex:0 0 155px; font-size:16px; font-weight:bold;">12:30–12:40</div>
-    <div style="border-left:2px solid #d9d0c0; padding-left:24px;">
-      <strong style="font-size:16px;">ENCERRAMENTO</strong>
-      <span> · Agradecimentos finais</span>
+  <div class="herit-item" style="margin-bottom:0;">
+    <div class="herit-time">12:30–12:40</div>
+    <div class="herit-content">
+      <strong>PALAVRAS DE ENCERRAMENTO</strong>
+      <span> · Encerramento e agradecimentos</span>
     </div>
   </div>
 
