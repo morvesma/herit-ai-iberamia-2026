@@ -932,3 +932,13 @@ footer p {
   }
 }
 
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+
