@@ -942,3 +942,19 @@ footer p {
 }
 
 
+.photo-gallery {
+  columns: 3;
+  column-gap: 22px;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+.photo-gallery a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 22px;
+  break-inside: avoid;
+}
+
+
+
